@@ -13,16 +13,16 @@ function onFormSubmit(event) {
     p
   };
 
-  formData.forEach((value, name) => {
+  // formData.forEach((value, name) => {
+  // console.log(value)
+  // console.log(value.length)
+  // debugger
+  if (e == "" || p == "") {
     // console.log(value)
-    // console.log(value.length)
-    // debugger
-    if (e == "" || p == "") {
-      // console.log(value)
-      alert("Усі поля повинні бути заповнені");
-    } else {
-      console.log(as)
-      document.querySelector(".login-form").reset();
-    }
-  })
+    alert("Усі поля повинні бути заповнені");
+  } else {
+    console.log(as)
+    document.querySelector(".login-form").reset();
+  }
+  // })
 }
