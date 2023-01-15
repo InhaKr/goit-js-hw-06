@@ -4,12 +4,16 @@ const refs = {
   nameLabel: document.querySelector('#name-output')
 };
 
-
 refs.nameLabel.textContent = `"Anonymous"`;
 refs.input.addEventListener('input', onInputChange);
 refs.plac.placeholder = "Anonymous"
 
 function onInputChange(event) {
   refs.nameLabel.textContent = event.currentTarget.value;
-  console.log(refs.nameLabel)
+  console.log(refs.nameLabel.textContent)
+
+  if (refs.nameLabel.textContent == "") {
+    // console.log("empty")
+    refs.nameLabel.textContent = `"Anonymous"`
+  }
 }
