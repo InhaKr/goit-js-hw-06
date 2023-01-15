@@ -5,7 +5,7 @@ const refs = {
 };
 
 
-refs.nameLabel.textContent = "Anonymous";
+refs.nameLabel.textContent = `"Anonymous"`;
 refs.input.addEventListener('input', onInputChange);
 refs.plac.placeholder = "Anonymous"
 
